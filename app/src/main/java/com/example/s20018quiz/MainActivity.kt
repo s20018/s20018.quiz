@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity() {
             if (i == 10) {
                 //画面遷移
                 val intent = Intent(this, Result::class.java)
-                intent.putExtra("tokuten", view?.id)
                 startActivity(intent)
                 finish()
 
