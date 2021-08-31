@@ -7,6 +7,5 @@ class Result : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
-        val id = intent.getIntExtra("tokuten",0)
     }
 }
