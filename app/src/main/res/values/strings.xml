@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">s20018.quiz</string>
+
+    <string name="tvCount">あと？問</string>
+    <string name="tvQuestion">question</string>
+    <string name="ansBtn1">ans1</string>
+    <string name="ansBtn2">ans2</string>
+    <string name="ansBtn3">ans3</string>
+    <string name="ansBtn4">ans4</string>
 </resources>
