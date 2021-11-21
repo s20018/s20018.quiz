@@ -1,16 +1,26 @@
 package com.example.s20018quiz
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import jp.ac.it_college.s20003.quiz.databinding.ActivityResultBinding
 
-class Result : AppCompatActivity() {
+class ResultActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityResultBinding
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        binding = ActivityResultBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val ansCnt = intent.getIntExtra("ANSWER", 0)
+        val ansView = ansCnt.toString()
+
+        val resultView = binding.resultView
+
+        resultView.text = "$ansView / 10"
+
     }
-    private fun home() {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-}
 }
