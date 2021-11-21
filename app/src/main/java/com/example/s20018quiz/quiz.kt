@@ -26,9 +26,6 @@ class QuizActivity : AppCompatActivity() {
     //問題数カウント
     private var q: Int = 0
 
-    aa
-
-
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
